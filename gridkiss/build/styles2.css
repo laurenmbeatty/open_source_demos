@@ -1,0 +1,229 @@
+.grid {
+    display: grid;
+    align-content: stretch;
+    justify-content: start;
+    grid-template: "a b c d " 1fr ". . g . " 1fr ". . g . " 1fr ". . g . " 1fr ". . . . " 1fr ". . h i" 1fr "j j . i" 1fr ". . k i" 1fr ". . . i" 1fr ". . . . " 1fr ". . . . " 1fr / 221px 221px 221px 221px
+}
+.grid > .grid-item1 {
+    grid-area: a
+}
+.grid > .grid-item2 {
+    grid-area: b
+}
+.grid > .grid-item3 {
+    grid-area: c
+}
+.grid > .grid-item4 {
+    grid-area: d
+}
+.grid > .grid-item--height2-1 {
+    grid-area: g;
+    align-self: start
+}
+.grid > .grid-item--height2-3 {
+    grid-area: h
+}
+.grid > .grid-item-height2-4 {
+    grid-area: i
+}
+.grid > .grid-item--width2-3 {
+    grid-area: j
+}
+.grid > .grid-item9 {
+    grid-area: k
+}
+@supports not (grid-template-areas:"test") {
+    .grid {
+        position: relative;
+        display: block;
+        width: 884px;
+        height: 100%
+    }
+    .grid > .grid-item1 {
+        position: absolute;
+        box-sizing: border-box;
+        height: 9.09091%;
+        width: 221px;
+        top: 0;
+        left: 0
+    }
+    .grid > .grid-item2 {
+        position: absolute;
+        box-sizing: border-box;
+        height: 9.09091%;
+        width: 221px;
+        top: 0;
+        left: 221px
+    }
+    .grid > .grid-item3 {
+        position: absolute;
+        box-sizing: border-box;
+        height: 9.09091%;
+        width: 221px;
+        top: 0;
+        left: 442px
+    }
+    .grid > .grid-item4 {
+        position: absolute;
+        box-sizing: border-box;
+        height: 9.09091%;
+        width: 221px;
+        top: 0;
+        left: 663px
+    }
+    .grid > .grid-item--height2-1 {
+        position: absolute;
+        box-sizing: border-box;
+        max-height: 27.27273%;
+        width: 221px;
+        top: 9.09091%;
+        left: 442px
+    }
+    .grid > .grid-item--height2-3 {
+        position: absolute;
+        box-sizing: border-box;
+        height: 9.09091%;
+        width: 221px;
+        top: 45.45455%;
+        left: 442px
+    }
+    .grid > .grid-item-height2-4 {
+        position: absolute;
+        box-sizing: border-box;
+        height: 36.36364%;
+        width: 221px;
+        top: 45.45455%;
+        left: 663px
+    }
+    .grid > .grid-item--width2-3 {
+        position: absolute;
+        box-sizing: border-box;
+        height: 9.09091%;
+        width: 442px;
+        top: 54.54545%;
+        left: 0
+    }
+    .grid > .grid-item9 {
+        position: absolute;
+        box-sizing: border-box;
+        height: 9.09091%;
+        width: 221px;
+        top: 63.63636%;
+        left: 442px
+    }
+}
+@media screen and (min-width:0\0) {
+    .grid {
+        position: relative;
+        display: block;
+        width: 884px;
+        height: 100%
+    }
+    .grid > .grid-item1 {
+        position: absolute;
+        box-sizing: border-box;
+        height: 9.09091%;
+        width: 221px;
+        top: 0;
+        left: 0
+    }
+    .grid > .grid-item2 {
+        position: absolute;
+        box-sizing: border-box;
+        height: 9.09091%;
+        width: 221px;
+        top: 0;
+        left: 221px
+    }
+    .grid > .grid-item3 {
+        position: absolute;
+        box-sizing: border-box;
+        height: 9.09091%;
+        width: 221px;
+        top: 0;
+        left: 442px
+    }
+    .grid > .grid-item4 {
+        position: absolute;
+        box-sizing: border-box;
+        height: 9.09091%;
+        width: 221px;
+        top: 0;
+        left: 663px
+    }
+    .grid > .grid-item--height2-1 {
+        position: absolute;
+        box-sizing: border-box;
+        max-height: 27.27273%;
+        width: 221px;
+        top: 9.09091%;
+        left: 442px
+    }
+    .grid > .grid-item--height2-3 {
+        position: absolute;
+        box-sizing: border-box;
+        height: 9.09091%;
+        width: 221px;
+        top: 45.45455%;
+        left: 442px
+    }
+    .grid > .grid-item-height2-4 {
+        position: absolute;
+        box-sizing: border-box;
+        height: 36.36364%;
+        width: 221px;
+        top: 45.45455%;
+        left: 663px
+    }
+    .grid > .grid-item--width2-3 {
+        position: absolute;
+        box-sizing: border-box;
+        height: 9.09091%;
+        width: 442px;
+        top: 54.54545%;
+        left: 0
+    }
+    .grid > .grid-item9 {
+        position: absolute;
+        box-sizing: border-box;
+        height: 9.09091%;
+        width: 221px;
+        top: 63.63636%;
+        left: 442px
+    }
+}
+.speaker {
+  background: #e70095;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding: 20px;
+}
+.wide {
+  background: #57c1e8;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding: 20px;
+
+}
+.tall {
+  background: #fff;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding: 20px;
+
+}
+.stat {
+  background: #00ae41;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.grid {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  background: #e7e7e6;
+}
+body {
+  background: #e7e7e6;
+}

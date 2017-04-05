@@ -1,0 +1,413 @@
+body {
+  display: grid;
+  align-content: space-between;
+  grid-template: "a" 80px "b " 1fr "d " 1fr "e " 1fr "f " 1fr / 1fr
+}
+
+body > header {
+  grid-area: a
+}
+
+body > .bloc1 {
+  grid-area: b
+}
+
+body > .bloc2 {
+  grid-area: d
+}
+
+body > .bloc3 {
+  grid-area: e
+}
+
+body > .bloc4 {
+  grid-area: f
+}
+
+@supports not (grid-template-areas:"test") {
+
+  body {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%
+  }
+
+  body > header {
+    position: absolute;
+    box-sizing: border-box;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0
+  }
+
+  body > .bloc1 {
+    position: absolute;
+    box-sizing: border-box;
+    height: calc((100% - 80px) * 1 / 4);
+    width: 100%;
+    top: 80px;
+    left: 0
+  }
+
+  body > .bloc2 {
+    position: absolute;
+    box-sizing: border-box;
+    height: calc((100% - 80px) * 1 / 4);
+    width: 100%;
+    top: calc(80px + ((100% - 80px) * 1 / 4));
+    left: 0
+  }
+
+  body > .bloc3 {
+    position: absolute;
+    box-sizing: border-box;
+    height: calc((100% - 80px) * 1 / 4);
+    width: 100%;
+    top: calc(80px + ((100% - 80px) * 2 / 4));
+    left: 0
+  }
+
+  body > .bloc4 {
+    position: absolute;
+    box-sizing: border-box;
+    height: calc((100% - 80px) * 1 / 4);
+    width: 100%;
+    top: calc(80px + ((100% - 80px) * 3 / 4));
+    left: 0
+  }
+}
+
+@media screen and (min-width:0\0) {
+
+  body {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%
+  }
+
+  body > header {
+    position: absolute;
+    box-sizing: border-box;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0
+  }
+
+  body > .bloc1 {
+    position: absolute;
+    box-sizing: border-box;
+    height: calc((100% - 80px) * 1 / 4);
+    width: 100%;
+    top: 80px;
+    left: 0
+  }
+
+  body > .bloc2 {
+    position: absolute;
+    box-sizing: border-box;
+    height: calc((100% - 80px) * 1 / 4);
+    width: 100%;
+    top: calc(80px + ((100% - 80px) * 1 / 4));
+    left: 0
+  }
+
+  body > .bloc3 {
+    position: absolute;
+    box-sizing: border-box;
+    height: calc((100% - 80px) * 1 / 4);
+    width: 100%;
+    top: calc(80px + ((100% - 80px) * 2 / 4));
+    left: 0
+  }
+
+  body > .bloc4 {
+    position: absolute;
+    box-sizing: border-box;
+    height: calc((100% - 80px) * 1 / 4);
+    width: 100%;
+    top: calc(80px + ((100% - 80px) * 3 / 4));
+    left: 0
+  }
+}
+
+@media (min-width:640px){
+  body {
+    display: grid;
+    align-content: space-between;
+    grid-template: "a a" 120px "b c " 1fr "e f " 1fr / 1fr 1fr
+  }
+  body > header {
+    grid-area: a
+  }
+  body > .bloc1 {
+    grid-area: b
+  }
+  body > .bloc2 {
+    grid-area: c
+  }
+  body > .bloc3 {
+    grid-area: e
+  }
+  body > .bloc4 {
+    grid-area: f
+  }
+  @supports not (grid-template-areas:"test") {
+
+    body {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%
+    }
+
+    body > header {
+      position: absolute;
+      box-sizing: border-box;
+      height: 120px;
+      width: 100%;
+      top: 0;
+      left: 0
+    }
+
+    body > .bloc1 {
+      position: absolute;
+      box-sizing: border-box;
+      height: calc((100% - 120px) * 1 / 2);
+      width: 50%;
+      top: 120px;
+      left: 0
+    }
+
+    body > .bloc2 {
+      position: absolute;
+      box-sizing: border-box;
+      height: calc((100% - 120px) * 1 / 2);
+      width: 50%;
+      top: 120px;
+      left: 50%
+    }
+
+    body > .bloc3 {
+      position: absolute;
+      box-sizing: border-box;
+      height: calc((100% - 120px) * 1 / 2);
+      width: 50%;
+      top: calc(120px + ((100% - 120px) * 1 / 2));
+      left: 0
+    }
+
+    body > .bloc4 {
+      position: absolute;
+      box-sizing: border-box;
+      height: calc((100% - 120px) * 1 / 2);
+      width: 50%;
+      top: calc(120px + ((100% - 120px) * 1 / 2));
+      left: 50%
+    }
+  }
+  @media screen and (min-width:0\0) {
+
+    body {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%
+    }
+
+    body > header {
+      position: absolute;
+      box-sizing: border-box;
+      height: 120px;
+      width: 100%;
+      top: 0;
+      left: 0
+    }
+
+    body > .bloc1 {
+      position: absolute;
+      box-sizing: border-box;
+      height: calc((100% - 120px) * 1 / 2);
+      width: 50%;
+      top: 120px;
+      left: 0
+    }
+
+    body > .bloc2 {
+      position: absolute;
+      box-sizing: border-box;
+      height: calc((100% - 120px) * 1 / 2);
+      width: 50%;
+      top: 120px;
+      left: 50%
+    }
+
+    body > .bloc3 {
+      position: absolute;
+      box-sizing: border-box;
+      height: calc((100% - 120px) * 1 / 2);
+      width: 50%;
+      top: calc(120px + ((100% - 120px) * 1 / 2));
+      left: 0
+    }
+
+    body > .bloc4 {
+      position: absolute;
+      box-sizing: border-box;
+      height: calc((100% - 120px) * 1 / 2);
+      width: 50%;
+      top: calc(120px + ((100% - 120px) * 1 / 2));
+      left: 50%
+    }
+  }
+}
+
+@media (min-width: 960px){
+  body {
+    display: grid;
+    align-content: space-between;
+    justify-content: start;
+    grid-template: "a a a" 30% "b b b " 60% "d e f " 10% / 1fr 1fr 1fr
+  }
+  body > header {
+    grid-area: a
+  }
+  body > .bloc1 {
+    grid-area: b
+  }
+  body > .bloc2 {
+    grid-area: d
+  }
+  body > .bloc3 {
+    grid-area: e
+  }
+  body > .bloc4 {
+    grid-area: f
+  }
+  @supports not (grid-template-areas:"test") {
+
+    body {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%
+    }
+
+    body > header {
+      position: absolute;
+      box-sizing: border-box;
+      height: 30%;
+      width: 100%;
+      top: 0%;
+      left: 0
+    }
+
+    body > .bloc1 {
+      position: absolute;
+      box-sizing: border-box;
+      height: 60%;
+      width: 100%;
+      top: 30%;
+      left: 0
+    }
+
+    body > .bloc2 {
+      position: absolute;
+      box-sizing: border-box;
+      height: 10%;
+      width: 33.33333%;
+      top: 90%;
+      left: 0
+    }
+
+    body > .bloc3 {
+      position: absolute;
+      box-sizing: border-box;
+      height: 10%;
+      width: 33.33333%;
+      top: 90%;
+      left: 33.33333%
+    }
+
+    body > .bloc4 {
+      position: absolute;
+      box-sizing: border-box;
+      height: 10%;
+      width: 33.33333%;
+      top: 90%;
+      left: 66.66667%
+    }
+  }
+  @media screen and (min-width:0\0) {
+
+    body {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%
+    }
+
+    body > header {
+      position: absolute;
+      box-sizing: border-box;
+      height: 30%;
+      width: 100%;
+      top: 0%;
+      left: 0
+    }
+
+    body > .bloc1 {
+      position: absolute;
+      box-sizing: border-box;
+      height: 60%;
+      width: 100%;
+      top: 30%;
+      left: 0
+    }
+
+    body > .bloc2 {
+      position: absolute;
+      box-sizing: border-box;
+      height: 10%;
+      width: 33.33333%;
+      top: 90%;
+      left: 0
+    }
+
+    body > .bloc3 {
+      position: absolute;
+      box-sizing: border-box;
+      height: 10%;
+      width: 33.33333%;
+      top: 90%;
+      left: 33.33333%
+    }
+
+    body > .bloc4 {
+      position: absolute;
+      box-sizing: border-box;
+      height: 10%;
+      width: 33.33333%;
+      top: 90%;
+      left: 66.66667%
+    }
+  }
+}
+
+header { background: yellow }
+.bloc1 { background: blue }
+.bloc2 { background: green }
+.bloc3 { background: purple }
+.bloc4 { background: chocolate }
+
+.bloc {
+	text-align:center;
+	color: white;
+	font-size: 48px;
+}
+body {
+  height: 100vh;
+}

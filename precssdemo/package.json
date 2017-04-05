@@ -1,0 +1,16 @@
+{
+  "name": "precssdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.4.0",
+    "precss": "^1.4.0"
+  }
+}

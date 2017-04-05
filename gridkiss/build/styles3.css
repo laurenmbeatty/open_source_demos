@@ -1,0 +1,436 @@
+.grid {
+  display: grid;
+  align-content: stretch;
+  grid-template: "a . b c d " 221px ". . . . . " 20px "g g g h i " 221px ". . . h . " 20px "j j j h k " 221px ". . . . . " 20px "l . m n o " 221px "l . . n . " 20px "l . p n q" 221px ". . . . . " 20px "r r r s t " 221px ". . . . t " 20px "u u u v t " 221px / 25% 1fr 25% 25% 25%
+}
+.grid > .item1 {
+  grid-area: a
+}
+.grid > .item2 {
+  grid-area: b
+}
+.grid > .item3 {
+  grid-area: c
+}
+.grid > .item4 {
+  grid-area: d
+}
+.grid > .wide1 {
+  grid-area: g
+}
+.grid > .tall1 {
+  grid-area: h
+}
+.grid > .item5 {
+  grid-area: i
+}
+.grid > .wide2 {
+  grid-area: j
+}
+.grid > .item6 {
+  grid-area: k
+}
+.grid > .tall2 {
+  grid-area: l
+}
+.grid > .item7 {
+  grid-area: m
+}
+.grid > .tall3 {
+  grid-area: n
+}
+.grid > .item8 {
+  grid-area: o
+}
+.grid > .item9 {
+  grid-area: p
+}
+.grid > .item10 {
+  grid-area: q
+}
+.grid > .wide3 {
+  grid-area: r
+}
+.grid > .item11 {
+  grid-area: s
+}
+.grid > .tall4 {
+  grid-area: t
+}
+.grid > .wide4 {
+  grid-area: u
+}
+.grid > .item12 {
+  grid-area: v
+}
+@supports not (grid-template-areas:"test") {
+  .grid {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 1667px
+  }
+  .grid > .item1 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 0;
+    left: 0
+  }
+  .grid > .item2 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 0;
+    left: 25%
+  }
+  .grid > .item3 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 0;
+    left: 50%
+  }
+  .grid > .item4 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 0;
+    left: 75%
+  }
+  .grid > .wide1 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 50%;
+    top: 241px;
+    left: 0
+  }
+  .grid > .tall1 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 462px;
+    width: 25%;
+    top: 241px;
+    left: 50%
+  }
+  .grid > .item5 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 241px;
+    left: 75%
+  }
+  .grid > .wide2 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 50%;
+    top: 482px;
+    left: 0
+  }
+  .grid > .item6 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 482px;
+    left: 75%
+  }
+  .grid > .tall2 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 462px;
+    width: 25%;
+    top: 723px;
+    left: 0
+  }
+  .grid > .item7 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 723px;
+    left: 25%
+  }
+  .grid > .tall3 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 462px;
+    width: 25%;
+    top: 723px;
+    left: 50%
+  }
+  .grid > .item8 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 723px;
+    left: 75%
+  }
+  .grid > .item9 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 964px;
+    left: 25%
+  }
+  .grid > .item10 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 964px;
+    left: 75%
+  }
+  .grid > .wide3 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 50%;
+    top: 1205px;
+    left: 0
+  }
+  .grid > .item11 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 1205px;
+    left: 50%
+  }
+  .grid > .tall4 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 462px;
+    width: 25%;
+    top: 1205px;
+    left: 75%
+  }
+  .grid > .wide4 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 50%;
+    top: 1446px;
+    left: 0
+  }
+  .grid > .item12 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 1446px;
+    left: 50%
+  }
+}
+@media screen and (min-width:0\0) {
+  .grid {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 1667px
+  }
+  .grid > .item1 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 0;
+    left: 0
+  }
+  .grid > .item2 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 0;
+    left: 25%
+  }
+  .grid > .item3 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 0;
+    left: 50%
+  }
+  .grid > .item4 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 0;
+    left: 75%
+  }
+  .grid > .wide1 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 50%;
+    top: 241px;
+    left: 0
+  }
+  .grid > .tall1 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 462px;
+    width: 25%;
+    top: 241px;
+    left: 50%
+  }
+  .grid > .item5 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 241px;
+    left: 75%
+  }
+  .grid > .wide2 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 50%;
+    top: 482px;
+    left: 0
+  }
+  .grid > .item6 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 482px;
+    left: 75%
+  }
+  .grid > .tall2 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 462px;
+    width: 25%;
+    top: 723px;
+    left: 0
+  }
+  .grid > .item7 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 723px;
+    left: 25%
+  }
+  .grid > .tall3 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 462px;
+    width: 25%;
+    top: 723px;
+    left: 50%
+  }
+  .grid > .item8 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 723px;
+    left: 75%
+  }
+  .grid > .item9 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 964px;
+    left: 25%
+  }
+  .grid > .item10 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 964px;
+    left: 75%
+  }
+  .grid > .wide3 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 50%;
+    top: 1205px;
+    left: 0
+  }
+  .grid > .item11 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 1205px;
+    left: 50%
+  }
+  .grid > .tall4 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 462px;
+    width: 25%;
+    top: 1205px;
+    left: 75%
+  }
+  .grid > .wide4 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 50%;
+    top: 1446px;
+    left: 0
+  }
+  .grid > .item12 {
+    position: absolute;
+    box-sizing: border-box;
+    height: 221px;
+    width: 25%;
+    top: 1446px;
+    left: 50%
+  }
+}
+body {
+  background: #e7e7e6;
+}
+header {
+  background: #000;
+  height: 100px;
+}
+.grid {
+  width: 90%;
+  margin: 20px auto;
+}
+.speaker {
+  background: #e70095;
+  padding: 20px;
+  margin-right: 20px;
+}
+.item3.speaker, .item7.speaker {
+  background: #00ae41;
+}
+.item9.speaker, .item11.speaker {
+  background: #e7e7e6;
+}
+.item1.speaker {
+  background: #000;
+}
+.tall {
+  background: #fff;
+  padding: 20px;
+  margin-right: 20px;
+}
+.wide {
+  background: #57c1e8;
+  padding: 20px;
+  margin-right: 20px;
+}

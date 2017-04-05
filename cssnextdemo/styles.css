@@ -1,0 +1,83 @@
+/* In a large code base, this technique works great for styles that repeat throughout the site */
+:root {
+  --header-theme: {
+    padding: 12px 0 10px 10px;
+    background-color: #b9d989;
+    margin: 20px 0 2px 0;
+  };
+  --header-font: {
+    font-family: "roboto";
+    font-weight: 400;
+    font-size: 20px;
+    color: #65675e;
+    margin: 0;
+  };
+  --content-box: {
+    padding: 18px 18px 23px 18px;
+    border: 1px solid #b9d989;
+  };
+  --link-style: {
+    font-family: "roboto";
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #207a33;
+    margin-top: 5px;
+  };
+  --paragraph-style: {
+    font-family: "roboto";
+    font-weight: 400;
+    font-size: 14px;
+    color: #65675e;
+  };
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.programs-header {
+  @apply --header-theme;
+}
+.programs-header h3 {
+  @apply --header-font;
+}
+.programs-content {
+  @apply --content-box;
+}
+.programs-content-description {
+  @apply --paragraph-style;
+}
+
+.programs-wrapper {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+.program {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px 0 0;
+}
+.program-image {
+  width: 180px;
+  height: 100px;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.program-link a {
+  @apply --link-style;
+}
+.resources {
+  margin-top: 20px;
+}
+@media screen and (max-width: 550px) {
+  .programs-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}

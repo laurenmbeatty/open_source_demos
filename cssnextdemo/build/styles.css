@@ -1,0 +1,81 @@
+/* In a large code base, this technique works great for styles that repeat throughout the site */
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.programs-header {
+  padding: 12px 0 10px 10px;
+  background-color: #b9d989;
+  margin: 20px 0 2px 0;
+}
+.programs-header h3 {
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 20px;
+  color: #65675e;
+  margin: 0;
+}
+.programs-content {
+  padding: 18px 18px 23px 18px;
+  border: 1px solid #b9d989;
+}
+.programs-content-description {
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 14px;
+  color: #65675e;
+}
+
+.programs-wrapper {
+  list-style: none;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 0;
+}
+.program {
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 20px 0 0;
+}
+.program-image {
+  width: 180px;
+  height: 100px;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.program-link a {
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #207a33;
+  margin-top: 5px;
+}
+.resources {
+  margin-top: 20px;
+}
+@media screen and (max-width: 550px) {
+  .programs-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
