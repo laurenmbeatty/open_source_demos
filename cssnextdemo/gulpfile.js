@@ -1,10 +1,11 @@
 const gulp = require('gulp');
 const postcss = require('gulp-postcss');
 const cssnext = require('postcss-cssnext');
+const fontMagician = require('postcss-font-magician');
 
 gulp.task('css', () =>
   gulp.src('./*.css')
-  .pipe(postcss(cssnext))
+  .pipe(postcss([cssnext, fontMagician]))
   .pipe(gulp.dest('build'))
 );
 
