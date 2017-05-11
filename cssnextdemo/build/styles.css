@@ -94,7 +94,7 @@
   margin: 20px 0 2px 0;
 }
 .programs-header h3 {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: #65675e;
@@ -105,7 +105,7 @@
   border: 1px solid #b9d989;
 }
 .programs-content-description {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #65675e;
@@ -142,7 +142,7 @@
   background-position: center !important;
 }
 .program-link a {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;

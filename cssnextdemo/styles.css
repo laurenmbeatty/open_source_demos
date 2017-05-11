@@ -8,7 +8,7 @@
     margin: 20px 0 2px 0;
   };
   --header-font: {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: #65675e;
@@ -19,7 +19,7 @@
     border: 1px solid #b9d989;
   };
   --link-style: {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;
@@ -27,7 +27,7 @@
     margin-top: 5px;
   };
   --paragraph-style: {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #65675e;
